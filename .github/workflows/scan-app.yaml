@@ -26,6 +26,7 @@ jobs:
         with:
           scan-type: 'fs'
           scan-ref: 'html-sample-app-master/' # scans only the app folder
+          scanners: 'vuln,secret'
           format: 'sarif'
           output: 'trivy-results.sarif'
           severity: 'CRITICAL,HIGH'
