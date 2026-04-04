@@ -27,4 +27,4 @@ jobs:
           context: ./html-sample-app-master
           file: ./html-sample-app-master/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/K3-MacOS:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/k3-macos:latest
