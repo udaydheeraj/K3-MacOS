@@ -25,7 +25,7 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
-          scan-ref: '.' # scans only the app folder
+          scan-ref: 'html-sample-app-master/index.html' # scans only the app folder
           scanners: 'vuln,secret'
           format: 'sarif'
           output: 'trivy-results.sarif'
